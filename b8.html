@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[1,2,3,4,5]
+    function reverse(arr) {
+        let tempArr = [];
+        for (let i = 0; i < arr.length; i++) {
+            tempArr.unshift(arr[i]);
+        }
+        for (let i = 0; i < arr.length; i++) {
+            arr[i]=tempArr[i];
+        }
+    }
+    reverse(arr);
+    document.write(arr)
+</script>
+</body>
+</html>
